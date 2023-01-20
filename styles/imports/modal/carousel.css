@@ -1,0 +1,30 @@
+.project-carousel {
+  grid-column-start: 8;
+  grid-column-end: 13;
+}
+
+.transform-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  gap: 2rem;
+  transition: transform 0.4s ease-out;
+}
+
+.project-carousel-img {
+  height: calc(100vh - 75px - 130px);
+  max-width: none;
+}
+
+.margin-container {
+  width: 10px;
+  flex-shrink: 0;
+}
+
+.btn-scroll-back {
+  background-color: inherit;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

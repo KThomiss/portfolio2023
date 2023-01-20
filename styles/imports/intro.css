@@ -1,0 +1,38 @@
+.intro-section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: calc(100% - 70px);
+}
+
+.intro-content-text {
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  font-size: var(--fs-xl);
+}
+
+.intro-content-text p {
+  margin: 0;
+  font-size: var(--fs-lg);
+}
+
+.intro-content-bg {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  height: 100%;
+  align-self: center;
+  background-image: url(../../images/profile/profile__three-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

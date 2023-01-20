@@ -1,0 +1,42 @@
+.about-project {
+  grid-column-start: 2;
+  grid-column-end: 7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-info-title {
+  color: white;
+  font-size: var(--fs-lg);
+  margin: 0;
+}
+
+.project-info-text {
+  font-size: var(--fs-sm);
+  margin: 0;
+  color: var(--clr-modal-text);
+}
+
+.project-details > * {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--clr-text);
+  padding: 10px;
+  font-size: var(--fs-md);
+}
+
+.lang-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.language-img {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

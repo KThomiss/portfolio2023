@@ -1,0 +1,51 @@
+.react {
+  background-image: url(../../images/logos/react_resized.png);
+}
+
+.bootstrap {
+  background-image: url(../../images/logos/bootstrap_resized.png);
+}
+
+.sass {
+  background-image: url(../../images/logos/sass_resized.png);
+}
+
+.noroff {
+  background-image: url(../../images/logos/noroff_resized.png);
+}
+
+.html {
+  background-image: url(../../images/logos/html_resized.png);
+}
+
+.css {
+  background-image: url(../../images/logos/css_resized.png);
+}
+
+.javascript {
+  background-image: url(../../images/logos/javascript.png);
+}
+
+.strapi {
+  background-image: url(../../images/logos/strapi_resized.png);
+}
+
+.wordpress {
+  background-image: url(../../images/logos/wordpress.png);
+}
+
+.vue {
+  background-image: url(../../images/logos/vue.png);
+}
+
+.tailwind {
+  background-image: url(../../images/logos/tailwind.png);
+}
+
+.typescript {
+  background-image: url(../../images/logos/typescript.png);
+}
+
+.nextjs {
+  background-image: url(../../images/logos/nextjs.png);
+}

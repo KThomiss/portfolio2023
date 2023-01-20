@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&display=swap");
+@import url(./imports/variables.css);
+@import url(./imports/icons.css);
+@import url(./imports/navigation.css);
+@import url(./imports/intro.css);
+@import url(./imports/experience.css);
+@import url(./imports/projects.css);
+@import url(./imports/modal/modal.css);
+@import url(./imports/form.css);
+@import url(./imports/footer.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  line-height: 1.1;
+  color: #242420;
+  background-color: var(--clr-bg);
+}
+
+p,
+input,
+textarea {
+  color: #363630;
+}
+
+button {
+  font-family: "Heebo", sans-serif;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+.remove-scroll {
+  overflow: hidden;
+}
+
+.link-hover {
+  display: inline-block;
+}
+
+.link-hover::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  transition: width 0.5s ease-in-out;
+  background-color: black;
+}
+
+.link-hover:hover::after {
+  width: 100%;
+}

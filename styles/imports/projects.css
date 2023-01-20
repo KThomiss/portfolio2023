@@ -1,0 +1,108 @@
+.projects-sections {
+  background-color: var(--clr-bg);
+  color: var(--clr-heading);
+  scroll-snap-align: center;
+}
+
+.project-view {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.project-view.code-toad {
+  background-image: url(../../../images/codeToAd/codeToad-intro-bg.png);
+}
+
+.project-view.allez {
+  background-image: url(../../images/allez/allez-intro-bg.jpg);
+}
+
+.project-view.ktblog {
+  background-image: url(../../../images/KTblog/ktblog-intro-bg.png);
+  filter: grayscale(100%);
+}
+
+.project-text-container {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  padding-top: 2rem;
+  place-self: start;
+}
+
+.project-btn-container {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  place-self: end;
+  transition: transform 0.4s ease-in-out;
+  padding-bottom: 2rem;
+}
+
+.project-title {
+  color: white;
+  font-size: var(--fs-xl);
+}
+
+.project-type {
+  color: gray;
+  font-size: 1rem;
+  font-size: var(--fs-lg);
+}
+
+.btn-view-modal {
+  border: none;
+  background-color: inherit;
+  font-size: var(--fs-xl);
+  cursor: pointer;
+  color: white;
+  opacity: 0;
+}
+
+.project-btn-container:hover {
+  transform: scale(1.2);
+}
+
+.project-title,
+.project-type {
+  margin: 0;
+}
+
+.project-text-container {
+  opacity: 0;
+}
+
+.project-text-container.animate {
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.btn-view-modal.animate {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio slider example</title>
+    <link href="./styles/index.css" rel="stylesheet" />
+    <script src="./js/modal.js" type="module" defer></script>
+    <script src="./js/observer.js" type="module" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="intro-section">
+        <header>
+          <nav>
+            <span>Kristian Thomassen</span>
+            <ul>
+              <li><a href="#work" class="link-hover">Work</a></li>
+              <li><a href="#about" class="link-hover">About</a></li>
+              <li><a href="#contact" class="link-hover">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="intro-content">
+          <div class="intro-content-text">
+            <h1>Hello! I'm Kristian.</h1>
+            <p>A creative Front-end Developer</p>
+          </div>
+          <div class="intro-content-bg"></div>
+        </div>
+      </section>
+      <section class="experience-section" id="about">
+        <h2 class="experience-title">Experience</h2>
+        <div class="experience-container">
+          <div>
+            <div class="language-img html"></div>
+            <p>HTML</p>
+          </div>
+          <div>
+            <div class="language-img css"></div>
+            <p>CSS</p>
+          </div>
+          <div>
+            <div class="language-img javascript"></div>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <div class="language-img react"></div>
+            <p>React</p>
+          </div>
+          <div>
+            <div class="language-img bootstrap"></div>
+            <p>Bootstrap</p>
+          </div>
+          <div>
+            <div class="language-img tailwind"></div>
+            <p>Tailwind</p>
+          </div>
+          <div>
+            <div class="language-img sass"></div>
+            <p>Sass</p>
+          </div>
+          <div>
+            <div class="language-img strapi"></div>
+            <p>Strapi</p>
+          </div>
+          <div>
+            <div class="language-img wordpress"></div>
+            <p>Wordpress</p>
+          </div>
+        </div>
+        <h2 class="experience-title">Training</h2>
+        <div class="training-container">
+          <div>
+            <div class="language-img nextjs"></div>
+            <p>NextJs</p>
+          </div>
+          <div>
+            <div class="language-img vue"></div>
+            <p>Vue</p>
+          </div>
+          <div>
+            <div class="language-img typescript"></div>
+            <p>TypeScript</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects-sections" id="work">
+        <div class="project-view code-toad">
+          <div class="project-text-container">
+            <h2 class="project-title">Code ToAd</h2>
+            <p class="project-type">Social Media Platform</p>
+          </div>
+          <div class="project-btn-container">
+            <button class="btn-view-modal codetoad" data-btn="1">View</button>
+          </div>
+        </div>
+        <div class="project-modal" data-modal="1">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="header-container">
+                <div>Exam</div>
+                <div>Code ToAd</div>
+                <a href="https://codetoad.netlify.app/" class="link-hover">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1">Hide</button>
+              </div>
+            </div>
+            <div class="modal-body" data-body="1">
+              <div class="about-project">
+                <p class="project-info-text">
+                  This is a project I developed for my final exam and is using the social API provided by Noroff. The concept for the platform is a social media where people interested in coding or
+                  development can add their code and interact with each other by following other profiles, comment and create your own post.
+                </p>
+                <div class="project-details">
+                  <div>
+                    <span>Year:</span>
+                    <span>2022</span>
+                  </div>
+                  <div>
+                    <span>Study:</span>
+                    <span>Final Exam</span>
+                  </div>
+                  <div>
+                    <span>Languages used:</span>
+                    <div class="lang-icons">
+                      <div class="language-img react"></div>
+                      <div class="language-img bootstrap"></div>
+                      <div class="language-img sass"></div>
+                      <div class="language-img noroff"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <span>Design program:</span>
+                    <span>Adobe XD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-carousel project1" data-carousel="1">
+                <div class="transform-carousel project1">
+                  <img class="project-carousel-img" src="/images/codeToAd/codeToAd-1.png" alt="" />
+                  <img class="project-carousel-img" src="/images/codeToAd/codeToAd-2.png" alt="" />
+                  <img class="project-carousel-img" src="/images/codeToAd/codeToAd-3.png" alt="" />
+                  <img class="project-carousel-img" src="/images/codeToAd/codeToAd-4.png" alt="" />
+                  <img class="project-carousel-img" src="/images/codeToAd/codeToAd-5.png" alt="" />
+                  <button class="btn-scroll-back" data-btn="1">Back</button>
+                  <div class="margin-container project1"></div>
+                </div>
+              </div>
+              <div class="mobile-view">
+                <img class="mobile-view-img" src="/images/codeToAd/codeToAd-1.png" alt="" />
+                <img class="mobile-view-img" src="/images/codeToAd/codeToAd-2.png" alt="" />
+                <img class="mobile-view-img" src="/images/codeToAd/codeToAd-3.png" alt="" />
+                <img class="mobile-view-img" src="/images/codeToAd/codeToAd-4.png" alt="" />
+                <img class="mobile-view-img" src="/images/codeToAd/codeToAd-5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-sections">
+        <div class="project-view allez" data-observe="project-2">
+          <div class="project-text-container">
+            <h2 class="project-title">Allez</h2>
+            <p class="project-type">E-commerce Website</p>
+          </div>
+          <div class="project-btn-container">
+            <button class="btn-view-modal allez" data-btn="2">View</button>
+          </div>
+        </div>
+        <div class="project-modal" data-modal="2">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="header-container">
+                <div>Project</div>
+                <div>Allez</div>
+                <a href="https://stunning-crostata-c4037c.netlify.app/" class="link-hover">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1">Hide</button>
+              </div>
+            </div>
+            <div class="modal-body" data-body="2">
+              <div class="about-project">
+                <p class="project-info-text">
+                  This is a project I developed in my second year at Noroff. Designing and creating an e-commerce website fetching information from Strapi with a shopping cart using local storage. It
+                  also has a built in administrative panel for creating, updating and deleting products.
+                </p>
+                <div class="project-details">
+                  <div>
+                    <span>Year:</span>
+                    <span>2022</span>
+                  </div>
+                  <div>
+                    <span>Study:</span>
+                    <span>Project 2</span>
+                  </div>
+                  <div>
+                    <span>Languages used:</span>
+                    <div class="lang-icons">
+                      <div class="language-img html"></div>
+                      <div class="language-img javascript"></div>
+                      <div class="language-img sass"></div>
+                      <div class="language-img strapi"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <span>Design program:</span>
+                    <span>Adobe XD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-carousel project2" data-carousel="2">
+                <div class="transform-carousel project2">
+                  <img class="project-carousel-img" src="./images/allez/allez-1_lg.png" alt="" />
+                  <img class="project-carousel-img" src="./images/allez/allez-2_lg.png" alt="" />
+                  <img class="project-carousel-img" src="./images/allez/allez-3_lg.png" alt="" />
+                  <img class="project-carousel-img" src="./images/allez/allez-4_lg.png" alt="" />
+                  <img class="project-carousel-img" src="./images/allez/allez-5_lg.png" alt="" />
+                  <button class="btn-scroll-back" data-btn="2">Back</button>
+                  <div class="margin-container project2"></div>
+                </div>
+              </div>
+              <div class="mobile-view">
+                <img class="mobile-view-img" src="./images/allez/allez-1_lg.png" alt="" />
+                <img class="mobile-view-img" src="./images/allez/allez-2_lg.png" alt="" />
+                <img class="mobile-view-img" src="./images/allez/allez-3_lg.png" alt="" />
+                <img class="mobile-view-img" src="./images/allez/allez-4_lg.png" alt="" />
+                <img class="mobile-view-img" src="./images/allez/allez-5_lg.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-sections">
+        <div class="project-view ktblog">
+          <div class="project-text-container">
+            <h2 class="project-title">KTBlog.</h2>
+            <p class="project-type">Blog Website.</p>
+          </div>
+          <div class="project-btn-container">
+            <button class="btn-view-modal" data-btn="3">View</button>
+          </div>
+        </div>
+        <div class="project-modal" data-modal="3">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="header-container">
+                <div>Exam</div>
+                <div>KTBlog.</div>
+                <a href="https://www.ktexam.com/" class="link-hover">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1">Hide</button>
+              </div>
+            </div>
+            <div class="modal-body" data-body="3">
+              <div class="about-project">
+                <p class="project-info-text">
+                  This is a website I developed for my exam at the end of the first year at Noroff. All the blogs are fetched from Wordpress and are written with lorem ipsum, but the idea is to
+                  showcase how it would look in a real life project.
+                </p>
+                <div class="project-details">
+                  <div>
+                    <span>Year:</span>
+                    <span>2021</span>
+                  </div>
+                  <div>
+                    <span>Study:</span>
+                    <span>First year Exam</span>
+                  </div>
+                  <div>
+                    <span>Languages used:</span>
+                    <div class="lang-icons">
+                      <div class="language-img html"></div>
+                      <div class="language-img javascript"></div>
+                      <div class="language-img css"></div>
+                      <div class="language-img wordpress"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <span>Design program:</span>
+                    <span>Adobe XD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-carousel project3" data-carousel="3">
+                <div class="transform-carousel project3">
+                  <img class="project-carousel-img" src="/images/KTblog/KTblog-1.png" alt="" />
+                  <img class="project-carousel-img" src="/images/KTblog/KTblog-2.png" alt="" />
+                  <img class="project-carousel-img" src="/images/KTblog/KTblog-3.png" alt="" />
+                  <img class="project-carousel-img" src="/images/KTblog/KTblog-4.png" alt="" />
+                  <img class="project-carousel-img" src="/images/KTblog/KTblog-5.png" alt="" />
+                  <button class="btn-scroll-back" data-btn="3">Back</button>
+                  <div class="margin-container project3"></div>
+                </div>
+              </div>
+              <div class="mobile-view">
+                <img class="mobile-view-img" src="/images/KTblog/KTblog-1.png" alt="" />
+                <img class="mobile-view-img" src="/images/KTblog/KTblog-2.png" alt="" />
+                <img class="mobile-view-img" src="/images/KTblog/KTblog-3.png" alt="" />
+                <img class="mobile-view-img" src="/images/KTblog/KTblog-4.png" alt="" />
+                <img class="mobile-view-img" src="/images/KTblog/KTblog-5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-info" id="contact">
+        <div class="contact-container">
+          <form class="form" id="form" method="POST" data-netlify="true">
+            <h4 class="contact-title">Get in touch</h4>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea type="text" name="message" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Send</button>
+          </form>
+          <div class="contact-socials">
+            <div>
+              <a href="https://github.com/KThomiss" class="link-hover">Github </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/kristian-thomassen-6a8958203/" class="link-hover">LinkedIn </a>
+            </div>
+            <div>
+              <a href="#" class="link-hover">Email </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright <span>&#169;</span> Designed and Developed by Kristian Thomassen</p>
+    </footer>
+  </body>
+</html>

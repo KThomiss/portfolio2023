@@ -1,0 +1,70 @@
+.experience-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2rem 0;
+}
+
+.experience-section > h2 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  margin: 0.5rem;
+  font-size: var(--fs-lg);
+}
+
+.experience-container,
+.training-container {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.experience-container > div,
+.training-container > div {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #e3e3c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.experience-container > div.animate,
+.training-container > div.animate {
+  animation: popIntoView 0.7s forwards;
+}
+
+.experience-container > div p,
+.training-container > div p {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-top: 15px;
+}
+
+@keyframes popIntoView {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-section > h2 {
+    align-self: center;
+    text-align: center;
+  }
+
+  .experience-container,
+  .training-container {
+    justify-content: center;
+  }
+}

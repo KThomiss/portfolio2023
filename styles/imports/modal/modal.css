@@ -1,0 +1,117 @@
+@import url(./header.css);
+@import url(./about.css);
+@import url(./carousel.css);
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  background-color: var(--clr-bg-modal);
+  color: var(--clr-heading-modal);
+  display: none;
+}
+
+.open {
+  display: grid;
+  opacity: 1;
+  animation: openProject 0.4s ease;
+}
+
+@keyframes openProject {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.modal-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 4rem 0;
+}
+
+.remove-scroll {
+  overflow: hidden;
+}
+
+.mobile-view {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .modal-content {
+    overflow: auto;
+  }
+  .project-carousel {
+    display: none;
+  }
+
+  .about-project {
+    margin: 1rem 1rem;
+  }
+
+  .project-details > * {
+    font-size: var(--fs-sm);
+  }
+
+  .language-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mobile-view {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .mobile-view-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-container,
+  .btn-hide-modal {
+    font-size: var(--fs-sm);
+  }
+}
+
+@media (max-width: 450px) {
+  .language-img {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,32 @@
+.modal-header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 75px;
+  animation: opacity 0.4s ease-in;
+  font-size: 1.5rem;
+}
+
+.header-container {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container a {
+  color: var(--clr-modal-text);
+}
+
+.btn-hide-modal {
+  border: none;
+  background-color: inherit;
+  color: var(--clr-modal-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-hide-modal:hover {
+  transform: scale(1.1);
+}
