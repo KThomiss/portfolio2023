@@ -45,13 +45,14 @@ function openModal(id) {
 }
 
 //set event on the current opened modal by selecting body data and applying num to the selector in the handlecarousel function
-for (let i = 0; i < modalBody.length; i++) {
-  modalBody[i].addEventListener("wheel", function (e) {
-    let num = this.dataset.body;
-    handleCarousel(num, e);
-  });
-}
 if (window.innerWidth > 950) {
+  for (let i = 0; i < modalBody.length; i++) {
+    modalBody[i].addEventListener("wheel", function (e) {
+      let num = this.dataset.body;
+      handleCarousel(num, e);
+    });
+  }
+
   function handleCarousel(num, e) {
     e.preventDefault();
     const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
