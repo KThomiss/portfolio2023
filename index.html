@@ -4,34 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio slider example</title>
-    <link href="./styles/index.css" rel="stylesheet" />
+    <meta name="description" content="front-end developer portfolio page by kristian thomassen" />
+    <title>Kristian Thomassen</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/textAnimation.js" defer></script>
     <script src="./js/modal.js" type="module" defer></script>
     <script src="./js/observer.js" type="module" defer></script>
+    <script src="./js/mobileMenu.js" type="module" defer></script>
+    <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <main>
       <section class="intro-section">
-        <header>
-          <nav>
+        <header class="header">
+          <nav class="desktop-menu show">
             <span>Kristian Thomassen</span>
             <ul>
-              <li><a href="#work" class="link-hover">Work</a></li>
               <li><a href="#about" class="link-hover">About</a></li>
+              <li><a href="#work" class="link-hover">Projects</a></li>
+              <li><a href="#contact" class="link-hover">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile-menu">
+            <div class="mobile-menu-header">
+              <span>Kristian Thomassen</span>
+              <button class="mobile-menu-btn"><i data-feather="menu" class="icon-feather"></i></button>
+            </div>
+            <ul class="mobile-menu-ul hide">
+              <li><a href="#about" class="link-hover">About</a></li>
+              <li><a href="#work" class="link-hover">Projects</a></li>
               <li><a href="#contact" class="link-hover">Contact</a></li>
             </ul>
           </nav>
         </header>
         <div class="intro-content">
-          <div class="intro-content-text">
-            <h1>Hello! I'm Kristian.</h1>
-            <p>A creative Front-end Developer</p>
+          <div class="intro-text-container">
+            <div class="intro-content-text-top">
+              <h1>Front-End Developer</h1>
+            </div>
+            <div class="intro-content-text-bottom">
+              <p class="intro-span-text">
+                <span>Innovative</span>
+                <span>and</span>
+                <span>creative</span>
+                <span>designs</span>
+              </p>
+            </div>
           </div>
           <div class="intro-content-bg"></div>
         </div>
       </section>
       <section class="experience-section" id="about">
-        <h2 class="experience-title">Experience</h2>
+        <h2 class="about-title">About me</h2>
+        <div class="about-container">
+          <p>
+            First off, Hello! How do I do this again. Yes, Write about myself. I like to be creative and use what I have to develop New Things aswell as challenge myself to expand on these techniques.
+            Besides that I try to be active and keep up With Family, friends and what follows.
+          </p>
+        </div>
+        <h2 class="experience-title">My experience</h2>
         <div class="experience-container">
           <div>
             <div class="language-img html"></div>
@@ -70,7 +101,7 @@
             <p>Wordpress</p>
           </div>
         </div>
-        <h2 class="experience-title">Training</h2>
+        <h2 class="experience-title">In training</h2>
         <div class="training-container">
           <div>
             <div class="language-img nextjs"></div>
@@ -100,10 +131,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="header-container">
-                <div>Exam</div>
-                <div>Code ToAd</div>
-                <a href="https://codetoad.netlify.app/" class="link-hover">Visit site</a>
-                <button class="btn-hide-modal" data-btn="1">Hide</button>
+                <div>Project: Code ToAd</div>
+                <a href="https://codetoad.netlify.app/" class="visit-site link-hover" target="_blank">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1"><i data-feather="x" class="icon-feather"></i></button>
               </div>
             </div>
             <div class="modal-body" data-body="1">
@@ -122,12 +152,15 @@
                     <span>Final Exam</span>
                   </div>
                   <div>
+                    <span>API:</span>
+                    <div class="language-img noroff"></div>
+                  </div>
+                  <div>
                     <span>Languages used:</span>
                     <div class="lang-icons">
                       <div class="language-img react"></div>
                       <div class="language-img bootstrap"></div>
                       <div class="language-img sass"></div>
-                      <div class="language-img noroff"></div>
                     </div>
                   </div>
                   <div>
@@ -172,10 +205,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="header-container">
-                <div>Project</div>
-                <div>Allez</div>
-                <a href="https://stunning-crostata-c4037c.netlify.app/" class="link-hover">Visit site</a>
-                <button class="btn-hide-modal" data-btn="1">Hide</button>
+                <div>Project: Allez</div>
+                <a href="https://stunning-crostata-c4037c.netlify.app/" class="visit-site link-hover" target="_blank">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1"><i data-feather="x" class="icon-feather"></i></button>
               </div>
             </div>
             <div class="modal-body" data-body="2">
@@ -194,12 +226,15 @@
                     <span>Project 2</span>
                   </div>
                   <div>
+                    <span>API:</span>
+                    <div class="language-img strapi"></div>
+                  </div>
+                  <div>
                     <span>Languages used:</span>
                     <div class="lang-icons">
                       <div class="language-img html"></div>
                       <div class="language-img javascript"></div>
                       <div class="language-img sass"></div>
-                      <div class="language-img strapi"></div>
                     </div>
                   </div>
                   <div>
@@ -225,6 +260,7 @@
                 <img class="mobile-view-img" src="./images/allez/allez-3_lg.png" alt="" />
                 <img class="mobile-view-img" src="./images/allez/allez-4_lg.png" alt="" />
                 <img class="mobile-view-img" src="./images/allez/allez-5_lg.png" alt="" />
+                <h3>TEST</h3>
               </div>
             </div>
           </div>
@@ -244,10 +280,9 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="header-container">
-                <div>Exam</div>
-                <div>KTBlog.</div>
-                <a href="https://www.ktexam.com/" class="link-hover">Visit site</a>
-                <button class="btn-hide-modal" data-btn="1">Hide</button>
+                <div>Project: KTBlog.</div>
+                <a href="https://www.ktexam.com/" class="visit-site link-hover" target="_blank">Visit site</a>
+                <button class="btn-hide-modal" data-btn="1"><i data-feather="x" class="icon-feather"></i></button>
               </div>
             </div>
             <div class="modal-body" data-body="3">
@@ -266,12 +301,15 @@
                     <span>First year Exam</span>
                   </div>
                   <div>
+                    <span>API:</span>
+                    <div class="language-img wordpress"></div>
+                  </div>
+                  <div>
                     <span>Languages used:</span>
                     <div class="lang-icons">
                       <div class="language-img html"></div>
                       <div class="language-img javascript"></div>
                       <div class="language-img css"></div>
-                      <div class="language-img wordpress"></div>
                     </div>
                   </div>
                   <div>
@@ -322,13 +360,13 @@
           </form>
           <div class="contact-socials">
             <div>
-              <a href="https://github.com/KThomiss" class="link-hover">Github </a>
+              <a href="https://github.com/KThomiss" class="link-hover" target="_blank">Github </a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/in/kristian-thomassen-6a8958203/" class="link-hover">LinkedIn </a>
+              <a href="https://www.linkedin.com/in/kristian-thomassen-6a8958203/" class="link-hover" target="_blank">LinkedIn </a>
             </div>
             <div>
-              <a href="#" class="link-hover">Email </a>
+              <a href="#" class="link-hover">E-mail </a>
             </div>
           </div>
         </div>
@@ -337,5 +375,8 @@
     <footer>
       <p>Copyright <span>&#169;</span> Designed and Developed by Kristian Thomassen</p>
     </footer>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

@@ -21,7 +21,7 @@
 }
 
 .project-view.allez {
-  background-image: url(../../images/allez/allez-intro-bg.jpg);
+  background-image: url(../../images/allez/allez-bg-layer.png);
 }
 
 .project-view.ktblog {
@@ -50,7 +50,7 @@
 }
 
 .project-type {
-  color: gray;
+  color: var(--clr-text-modal);
   font-size: 1rem;
   font-size: var(--fs-lg);
 }

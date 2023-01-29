@@ -45,34 +45,35 @@ function openModal(id) {
 }
 
 //set event on the current opened modal by selecting body data and applying num to the selector in the handlecarousel function
-if (window.innerWidth > 950) {
-  for (let i = 0; i < modalBody.length; i++) {
-    modalBody[i].addEventListener("wheel", function (e) {
-      let num = this.dataset.body;
+for (let i = 0; i < modalBody.length; i++) {
+  modalBody[i].addEventListener("wheel", function (e) {
+    let num = this.dataset.body;
+    if (window.innerWidth > 950) {
       handleCarousel(num, e);
-    });
-  }
-
-  function handleCarousel(num, e) {
-    e.preventDefault();
-    const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
-    const marginContainer = document.querySelector(`.margin-container.project${num}`);
-
-    let totalWidth = 0;
-    const allImages = document.querySelectorAll(`.project-carousel.project${num} img`);
-
-    for (let i = 0; i < allImages.length; i++) {
-      totalWidth += parseInt(allImages[i].offsetWidth);
     }
-
-    scrollValue += e.deltaY;
-
-    scrollValue = Math.min(Math.max(0, scrollValue), totalWidth);
-
-    marginContainer.style.marginLeft = `${scrollValue}px`;
-    transformCarousel.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1, 0, -${scrollValue}, 0, 0, 1)`;
-  }
+  });
 }
+
+function handleCarousel(num, e) {
+  e.preventDefault();
+  const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
+  const marginContainer = document.querySelector(`.margin-container.project${num}`);
+
+  let totalWidth = 0;
+  const allImages = document.querySelectorAll(`.project-carousel.project${num} img`);
+
+  for (let i = 0; i < allImages.length; i++) {
+    totalWidth += parseInt(allImages[i].offsetWidth);
+  }
+
+  scrollValue += e.deltaY;
+
+  scrollValue = Math.min(Math.max(0, scrollValue), totalWidth);
+
+  marginContainer.style.marginLeft = `${scrollValue}px`;
+  transformCarousel.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1, 0, -${scrollValue}, 0, 0, 1)`;
+}
+
 //scroll back function/reset carousel
 const btnToStart = document.querySelectorAll(".btn-scroll-back");
 

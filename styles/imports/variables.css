@@ -4,15 +4,23 @@
   --clr-heading: #242420;
   --clr-text: #363630;
   --clr-cta: #000000;
-  --clr-bg-modal: #211703;
-  /* --clr-bg-modal: #221a17; */
+  /* --clr-bg-modal: #211703; */
+  --clr-bg-modal: #18130d;
   --clr-heading-modal: #ebebeb;
   --clr-text-modal: #c8c8c8;
   --clr-cta-modal: #fbfbfb;
+  --clr-border-modal: #683448;
 
   /*Font Size*/
   --fs-sm: clamp(0.9375rem, 0.8218rem + 0.6173vw, 1.5625rem);
   --fs-md: clamp(1.5625rem, 1.4468rem + 0.6173vw, 2.1875rem);
   --fs-lg: clamp(1.875rem, 1.5278rem + 1.8519vw, 3.75rem);
   --fs-xl: clamp(3.125rem, 2.5463rem + 3.0864vw, 6.25rem);
+
+  /*fancy text*/
+
+  --clr-fancy-1: #b87333;
+  --clr-fancy-2: #683448;
+  --clr-fancy-3: #261c18;
+  --linear-gradient-text: linear-gradient(to right, var(--clr-fancy-3), var(--clr-fancy-1), var(--clr-fancy-2), var(--clr-fancy-3));
 }

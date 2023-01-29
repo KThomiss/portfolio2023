@@ -18,6 +18,10 @@
   color: var(--clr-modal-text);
 }
 
+.visit-site.link-hover::after {
+  background-color: var(--clr-border-modal);
+}
+
 .btn-hide-modal {
   border: none;
   background-color: inherit;

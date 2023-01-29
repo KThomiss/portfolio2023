@@ -7,8 +7,18 @@
 .experience-section > h2 {
   grid-column-start: 2;
   grid-column-end: 12;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   font-size: var(--fs-lg);
+}
+
+.about-container {
+  font-size: var(--fs-md);
+  grid-column-start: 2;
+  grid-column-end: 8;
+}
+
+.about-container p {
+  margin-top: 0;
 }
 
 .experience-container,
@@ -18,6 +28,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
+}
+
+.experience-container {
+  margin-bottom: 2rem;
 }
 
 .experience-container > div,
@@ -57,14 +71,55 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 800px) {
+  .experience-container,
+  .training-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 587px) {
+  .experience-container,
+  .training-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
   .experience-section > h2 {
     align-self: center;
     text-align: center;
   }
 
-  .experience-container,
-  .training-container {
-    justify-content: center;
+  .experience-container > div,
+  .training-container > div {
+    width: 100px;
+    height: 75px;
+    padding: 10px;
   }
+
+  .experience-container > div p,
+  .training-container > div p {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 561px) {
+  .experience-section > h2 {
+    align-self: center;
+    text-align: center;
+  }
+
+  /*   .experience-container > div,
+  .training-container > div {
+    width: 100px;
+    height: 75px;
+    padding: 10px;
+  }
+
+  .experience-container > div p,
+  .training-container > div p {
+    font-size: 1rem;
+    margin-top: 15px;
+  } */
 }

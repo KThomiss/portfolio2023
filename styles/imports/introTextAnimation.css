@@ -1,0 +1,268 @@
+h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+}
+
+h1 > span {
+  display: inline-block;
+}
+
+span[data-id="9"] {
+  display: block;
+}
+
+h1 > span[data-id="0"] {
+  transform: translate(900%, -1250%) rotate(-8deg);
+  animation: backToPlace0 1.5s forwards calc(0s * 0.14);
+}
+
+@keyframes backToPlace0 {
+  from {
+    transform: translate(900%, -1250%) rotate(-8deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="1"] {
+  transform: translate(-100%, 1300%) rotate(-20deg);
+  animation: backToPlace1 1.5s forwards calc(1s * 0.14);
+}
+
+@keyframes backToPlace1 {
+  from {
+    transform: translate(-100%, 1300%) rotate(-20deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="2"] {
+  transform: translate(150%, 1200%) rotate(2deg);
+  animation: backToPlace2 1.5s forwards calc(2s * 0.14);
+}
+
+@keyframes backToPlace2 {
+  from {
+    transform: translate(150%, 1200%) rotate(2deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="3"] {
+  transform: translate(-250%, 1100%) rotate(25deg);
+  animation: backToPlace3 1.5s forwards calc(3s * 0.14);
+}
+
+@keyframes backToPlace3 {
+  from {
+    transform: translate(-250%, 1100%) rotate(25deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="4"] {
+  transform: translate(-150%, 1200%) rotate(-25deg);
+  animation: backToPlace4 1.5s forwards calc(4s * 0.14);
+}
+
+@keyframes backToPlace4 {
+  from {
+    transform: translate(-150%, 1200%) rotate(-25deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="5"] {
+  transform: translate(-100%, 1100%) rotate(-15deg);
+  animation: backToPlace5 1.5s forwards calc(5s * 0.14);
+}
+
+@keyframes backToPlace5 {
+  from {
+    transform: translate(-100%, 1100%) rotate(-15deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="6"] {
+  transform: translate(-300%, 1300%) rotate(35deg);
+  animation: backToPlace6 1.5s forwards calc(6s * 0.14);
+}
+
+@keyframes backToPlace6 {
+  from {
+    transform: translate(-300%, 1300%) rotate(35deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="7"] {
+  transform: translate(-100%, 1150%) rotate(-90deg);
+  animation: backToPlace7 1.5s forwards calc(7s * 0.14);
+}
+
+@keyframes backToPlace7 {
+  from {
+    transform: translate(-100%, 1150%) rotate(-90deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="8"] {
+  transform: translate(-100%, -1050%) rotate(45deg);
+  animation: backToPlace8 1.5s forwards calc(8s * 0.14);
+}
+
+@keyframes backToPlace8 {
+  from {
+    transform: translate(-100%, -1050%) rotate(45deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="9"] {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+
+h1 > span[data-id="10"] {
+  transform: translate(1000%, 1030%) rotate(-10deg);
+  animation: backToPlace10 1.5s forwards calc(0s * 0.14);
+}
+
+@keyframes backToPlace10 {
+  from {
+    transform: translate(1000%, 1030%) rotate(-10deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="11"] {
+  transform: translate(500%, -1140%) rotate(20deg);
+  animation: backToPlace11 1.5s forwards calc(1s * 0.14);
+}
+
+@keyframes backToPlace11 {
+  from {
+    transform: translate(500%, -1140%) rotate(20deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="12"] {
+  transform: translate(300%, -1300%) rotate(40deg);
+  animation: backToPlace12 1.5s forwards calc(2s * 0.14);
+}
+
+@keyframes backToPlace12 {
+  from {
+    transform: translate(300%, -1300%) rotate(40deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="13"] {
+  transform: translate(1000%, 1300%) rotate(-20deg);
+  animation: backToPlace13 1.5s forwards calc(3s * 0.14);
+}
+
+@keyframes backToPlace13 {
+  from {
+    transform: translate(1000%, 1300%) rotate(-20deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="14"] {
+  transform: translate(1000%, 1100%) rotate(-25deg);
+  animation: backToPlace14 1.5s forwards calc(4s * 0.14);
+}
+
+@keyframes backToPlace14 {
+  from {
+    transform: translate(1000%, 1100%) rotate(-25deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="15"] {
+  transform: translate(500%, 1100%) rotate(30deg);
+  animation: backToPlace15 1.5s forwards calc(5s * 0.14);
+}
+
+@keyframes backToPlace15 {
+  from {
+    transform: translate(500%, 1100%) rotate(30deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="16"] {
+  transform: translate(350%, -1100%) rotate(-40deg);
+  animation: backToPlace16 1.5s forwards calc(6s * 0.14);
+}
+
+@keyframes backToPlace16 {
+  from {
+    transform: translate(350%, -1100%) rotate(-40deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="17"] {
+  transform: translate(80%, 1060%) rotate(10deg);
+  animation: backToPlace17 1.5s forwards calc(7s * 0.14);
+}
+
+@keyframes backToPlace17 {
+  from {
+    transform: translate(80%, 1060%) rotate(10deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+h1 > span[data-id="18"] {
+  transform: translate(100%, 1200%) rotate(-12deg);
+  animation: backToPlace18 1.5s forwards calc(8s * 0.14);
+}
+
+@keyframes backToPlace18 {
+  from {
+    transform: translate(100%, 1200%) rotate(-12deg);
+  }
+  to {
+    transform: none;
+  }
+}
