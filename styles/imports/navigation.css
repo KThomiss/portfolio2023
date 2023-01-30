@@ -30,7 +30,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #363630;
+  color: var(--clr-text);
 }
 
 .mobile-menu {

@@ -19,6 +19,7 @@
 
 .about-container p {
   margin-top: 0;
+  font-weight: 300;
 }
 
 .experience-container,
@@ -78,6 +79,13 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .about-container {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+}
+
 @media (max-width: 587px) {
   .experience-container,
   .training-container {
@@ -109,17 +117,4 @@
     align-self: center;
     text-align: center;
   }
-
-  /*   .experience-container > div,
-  .training-container > div {
-    width: 100px;
-    height: 75px;
-    padding: 10px;
-  }
-
-  .experience-container > div p,
-  .training-container > div p {
-    font-size: 1rem;
-    margin-top: 15px;
-  } */
 }

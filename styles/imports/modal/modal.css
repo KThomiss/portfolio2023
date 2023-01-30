@@ -71,10 +71,6 @@
     display: none;
   }
 
-  /*   .header-container div:nth-child(2) {
-    display: none;
-  } */
-
   .modal-body {
     display: flex;
     flex-direction: column;

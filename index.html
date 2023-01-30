@@ -11,6 +11,7 @@
     <script src="./js/modal.js" type="module" defer></script>
     <script src="./js/observer.js" type="module" defer></script>
     <script src="./js/mobileMenu.js" type="module" defer></script>
+    <script src="./js/contactMessage.js" defer></script>
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
@@ -59,7 +60,7 @@
         <div class="about-container">
           <p>
             I am a newly educated Front-End Developer, of Noroff School of Technology and Digital Media with a background in economics and leadership. I love creating customized web-sites packed with
-            original ideas and smooth looks. Every day I expand my coding skill set.
+            original ideas and smooth looks. There is always some new ideas to explore, so when I have some spare time I try to work on what ever inspires me at the time.
           </p>
         </div>
         <h2 class="experience-title">My experience</h2>
@@ -342,7 +343,7 @@
       </section>
       <section class="contact-info" id="contact">
         <div class="contact-container">
-          <form class="form" id="form" method="POST" data-netlify="true">
+          <form name="portfolio-contact" class="form" method="POST" data-netlify="true">
             <h4 class="contact-title">Get in touch</h4>
             <div>
               <label for="name">Name</label>
@@ -350,13 +351,16 @@
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </div>
             <div>
               <label for="message">Message</label>
-              <textarea type="text" name="message" id="message" rows="5"></textarea>
+              <textarea type="text" name="message" id="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="contact-btn">Send</button>
+            <div class="message-container">
+              <p>Thank you!</p>
+            </div>
           </form>
           <div class="contact-socials">
             <div>
