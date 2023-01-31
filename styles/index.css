@@ -2,7 +2,7 @@
 @import url(./imports/variables.css);
 @import url(./imports/icons.css);
 @import url(./imports/navigation.css);
-@import url(./imports/intro.css);
+@import url(./imports/intro/intro.css);
 @import url(./imports/experience.css);
 @import url(./imports/projects.css);
 @import url(./imports/modal/modal.css);

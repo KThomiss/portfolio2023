@@ -1,4 +1,5 @@
-@import url(./introTextAnimation.css);
+@import url(./headingAnimation.css);
+@import url(./textAnimation.css);
 
 .intro-section {
   height: 100vh;
@@ -35,14 +36,25 @@
 
 .intro-span-text span {
   display: block;
-  background: var(--linear-gradient-text);
+  padding-right: 10px;
+  opacity: 0;
+  /*   background: var(--linear-gradient-text);
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200%;
   background-position: -90%;
-  animation: background-move 3s forwards 2.12s;
+  animation: background-move 3s forwards 3.4s; */
 }
+
+/* @keyframes background-move {
+  from {
+    background-position: 120%;
+  }
+  to {
+    background-position: -90%;
+  }
+} */
 
 .intro-span-text span:nth-child(1) {
   font-size: var(--fs-lg);
@@ -58,22 +70,13 @@
   font-weight: 300;
 }
 
-@keyframes background-move {
-  from {
-    background-position: 120%;
-  }
-  to {
-    background-position: -90%;
-  }
-}
-
 .intro-content-bg {
   grid-column-start: 7;
   grid-column-end: 12;
   min-height: 90%;
   width: 100%;
   align-self: center;
-  background-image: url(../../images/profile/IMG_7299.jpeg);
+  background-image: url(../../../images/profile/profile-img.jpeg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -98,10 +101,14 @@
     justify-self: end;
   }
 
+  .intro-span-text span {
+    display: inline-block;
+  }
+
   .intro-content-bg {
     min-height: 100%;
     grid-row-start: 2;
     grid-column-start: 2;
-    background-position: right;
+    background-position: left;
   }
 }
