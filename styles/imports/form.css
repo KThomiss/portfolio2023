@@ -104,6 +104,10 @@ textarea:focus {
   font-weight: 900;
 }
 
+.email-copy:hover {
+  cursor: url(../../images/logos/cursor-copy.png), copy;
+}
+
 @media (max-width: 950px) {
   .contact-container {
     display: flex;

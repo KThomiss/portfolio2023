@@ -38,23 +38,7 @@
   display: block;
   padding-right: 10px;
   opacity: 0;
-  /*   background: var(--linear-gradient-text);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200%;
-  background-position: -90%;
-  animation: background-move 3s forwards 3.4s; */
 }
-
-/* @keyframes background-move {
-  from {
-    background-position: 120%;
-  }
-  to {
-    background-position: -90%;
-  }
-} */
 
 .intro-span-text span:nth-child(1) {
   font-size: var(--fs-lg);
