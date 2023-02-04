@@ -12,14 +12,19 @@
 }
 
 .about-container {
-  font-size: var(--fs-md);
   grid-column-start: 2;
   grid-column-end: 8;
 }
 
 .about-container p {
+  font-size: var(--fs-sm);
   margin-top: 0;
+  margin-bottom: 1.2rem;
   font-weight: 300;
+}
+
+.link-in-text {
+  font-weight: 500;
 }
 
 .experience-container,
