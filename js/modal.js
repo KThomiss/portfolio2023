@@ -9,23 +9,26 @@ let scrollValue = 0;
 //close current modal by data set ID
 hideModal.forEach((btn) => {
   btn.addEventListener("click", function (curr) {
+    resetCarousel(curr.target.dataset.btn);
     closeModal(curr.target.dataset.btn);
   });
 });
 
-function closeModal(num) {
+function resetCarousel(num) {
+  const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
+  const marginContainer = document.querySelector(`.margin-container.project${num}`);
+  marginContainer.style.marginLeft = `0`;
+  transformCarousel.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1, 0, 0, 0, 0, 1)`;
+  scrollValue = 0;
+}
+
+function closeModal() {
   projects.forEach((curr) => {
     if (curr.classList.contains("open")) {
       curr.classList.remove("open");
       body.classList.remove("remove-scroll");
     }
   });
-  //reset carousel when exiting the modal
-  const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
-  const marginContainer = document.querySelector(`.margin-container.project${num}`);
-  marginContainer.style.marginLeft = `0`;
-  transformCarousel.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1, 0, 0, 0, 0, 1)`;
-  scrollValue = 0;
 }
 
 //open modal by data set ID
@@ -82,11 +85,3 @@ btnToStart.forEach((btn) => {
     resetCarousel(curr.target.dataset.btn);
   });
 });
-
-function resetCarousel(num) {
-  const transformCarousel = document.querySelector(`.transform-carousel.project${num}`);
-  const marginContainer = document.querySelector(`.margin-container.project${num}`);
-  marginContainer.style.marginLeft = `0`;
-  transformCarousel.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0.0, 0, 0, 0, 1, 0, 0, 0, 0, 1)`;
-  scrollValue = 0;
-}
