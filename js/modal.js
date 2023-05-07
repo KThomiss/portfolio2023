@@ -1,15 +1,14 @@
 const body = document.querySelector("body");
 const showModalBtn = document.querySelectorAll(".btn-view-modal");
-const hideModal = document.querySelectorAll(".btn-hide-modal");
+const hideModalBtn = document.querySelectorAll(".btn-hide-modal");
 const projects = document.querySelectorAll(".project-modal");
 const modalBody = document.querySelectorAll(".modal-body");
 const projectImg = document.querySelectorAll(".project-img");
 let scrollValue = 0;
 
 //close current modal by data set ID
-hideModal.forEach((btn) => {
+hideModalBtn.forEach((btn) => {
   btn.addEventListener("click", function (curr) {
-    resetCarousel(curr.target.dataset.btn);
     closeModal(curr.target.dataset.btn);
   });
 });
@@ -35,6 +34,7 @@ function closeModal() {
 showModalBtn.forEach((e) => {
   e.addEventListener("click", function (curr) {
     openModal(curr.target.dataset.btn);
+    resetCarousel(curr.target.dataset.btn);
   });
 });
 
